@@ -68,6 +68,18 @@ html:
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)."
 
+.PHONY: html_cond_1
+html:
+	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)."
+
+.PHONY: html_cond_2
+html:
+	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)
+	@echo
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)."
+
 
 .PHONY: livehtml
 livehtml:
