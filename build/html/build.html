@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Build the Project &#8212; RST | Sphinx | Sublime | GitHub  documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <link rel="stylesheet" href="_static/osexample.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/osexample.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Use Read the Docs" href="rtd.html" />
+    <link rel="prev" title="Customize Styles" href="styles.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          RST | Sphinx | Sublime | GitHub</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Set Up Your System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create_project.html">Create a Sphinx Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary_terms.html">Glossary Terms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="packages.html">Install Sublime Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor_settings.html">Create Macros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sublime_macros.html">Customize Sublime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Use Snippets as Shortcuts</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="topics.html">Write Topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Create Tables of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lists.html">Use Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes_warnings.html">Use Notes and Warnings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code_blocks.html">Show Example Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables.html">Use Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">Add Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="images.html">Add Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="videos.html">Add Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inline.html">Use Inline Formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditions.html">Use Conditional Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Add a Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reuse.html">Reuse Content</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="theme.html">Use Themes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="styles.html">Customize Styles</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Build the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rtd.html">Use Read the Docs</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Build the Project</a><ul>
+<li><a class="reference internal" href="#make-html">Make HTML</a></li>
+<li><a class="reference internal" href="#automatically-generate-html-updates">Automatically Generate HTML Updates</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="styles.html" title="Previous Chapter: Customize Styles"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Customize Styles</span>
+    </a>
+  </li>
+  <li>
+    <a href="rtd.html" title="Next Chapter: Use Read the Docs"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Use Read the Docs &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="build-the-project">
+<h1>Build the Project<a class="headerlink" href="#build-the-project" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="make-html">
+<h2>Make HTML<a class="headerlink" href="#make-html" title="Permalink to this headline">¶</a></h2>
+<p>To build the HTML output for your project, open the command prompt in the top-level folder of your project (the location of the <code class="docutils literal"><span class="pre">Makefile</span></code>).  Then enter:</p>
+<div class="highlight-BASH"><div class="highlight"><pre><span></span>make html
+</pre></div>
+</div>
+<p>The HTML files are created in the build folder. Typically this is called <code class="docutils literal"><span class="pre">build</span></code> and at the same level as the <code class="docutils literal"><span class="pre">source</span></code> folder, although you can change this in the <code class="docutils literal"><span class="pre">Makefile</span></code>.</p>
+</div>
+<div class="section" id="automatically-generate-html-updates">
+<h2>Automatically Generate HTML Updates<a class="headerlink" href="#automatically-generate-html-updates" title="Permalink to this headline">¶</a></h2>
+<p>You can set up your project so that the HTML is automatically regenerated every time you save a change. This allows you to keep a the project open in your browser and view changes immediately.</p>
+<p>You must install <a class="reference external" href="https://pypi.python.org/pypi/sphinx-autobuild">Sphinx Autobuild</a>.</p>
+<ol class="arabic">
+<li><p class="first">From a command prompt, enter <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx-autobuild</span></code>.</p>
+</li>
+<li><p class="first">In the <code class="docutils literal"><span class="pre">Makefile</span></code>, add the lines:</p>
+<div class="highlight-BASH"><div class="highlight"><pre><span></span><span class="nv">SPHINXAUTOBUILD</span> <span class="o">=</span> sphinx-autobuild
+
+<span class="nv">ALLSPHINXLIVEOPTS</span>   <span class="o">=</span> <span class="k">$(</span>ALLSPHINXOPTS<span class="k">)</span> -q <span class="se">\</span>
+   -p <span class="m">0</span> <span class="se">\</span>
+   -H <span class="m">0</span>.0.0.0 <span class="se">\</span>
+   -B <span class="se">\</span>
+   --delay <span class="m">1</span> <span class="se">\</span>
+   --ignore <span class="s2">&quot;*.swp&quot;</span> <span class="se">\</span>
+   --ignore <span class="s2">&quot;*.pdf&quot;</span> <span class="se">\</span>
+   --ignore <span class="s2">&quot;*.log&quot;</span> <span class="se">\</span>
+   --ignore <span class="s2">&quot;*.out&quot;</span> <span class="se">\</span>
+   --ignore <span class="s2">&quot;*.toc&quot;</span> <span class="se">\</span>
+   --ignore <span class="s2">&quot;*.aux&quot;</span> <span class="se">\</span>
+   --ignore <span class="s2">&quot;*.idx&quot;</span> <span class="se">\</span>
+   --ignore <span class="s2">&quot;*.ind&quot;</span> <span class="se">\</span>
+   --ignore <span class="s2">&quot;*.ilg&quot;</span> <span class="se">\</span>
+   --ignore <span class="s2">&quot;*.tex&quot;</span> <span class="se">\</span>
+   --watch <span class="nb">source</span>
+
+.PHONY: livehtml
+livehtml:
+   <span class="k">$(</span>SPHINXAUTOBUILD<span class="k">)</span> -b html <span class="k">$(</span>ALLSPHINXLIVEOPTS<span class="k">)</span> <span class="k">$(</span>BUILDDIR<span class="k">)</span>
+   @echo
+   @echo <span class="s2">&quot;Build finished. The HTML pages are in </span><span class="k">$(</span>BUILDDIR<span class="k">)</span><span class="s2">.&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">From the command prompt, enter:</p>
+<div class="highlight-BASH"><div class="highlight"><pre><span></span>make livehtml
+</pre></div>
+</div>
+</li>
+</ol>
+<p>The project is built and opens automatically in your browser.</p>
+<p>Each time you save a file in the project, it is automatically rebuilt. Just refresh your browser.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If there are errors in the project, the automatic build will not complete and the HTML will not be updated.  Check the command window for error details.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

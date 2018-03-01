@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Reuse Content &#8212; RST | Sphinx | Sublime | GitHub  documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <link rel="stylesheet" href="_static/osexample.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/osexample.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Use Themes" href="theme.html" />
+    <link rel="prev" title="Add a Glossary" href="glossary.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          RST | Sphinx | Sublime | GitHub</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Set Up Your System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create_project.html">Create a Sphinx Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary_terms.html">Glossary Terms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="packages.html">Install Sublime Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor_settings.html">Create Macros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sublime_macros.html">Customize Sublime</a></li>
+<li class="toctree-l1"><a class="reference internal" href="snippets.html">Use Snippets as Shortcuts</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="topics.html">Write Topics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Create Tables of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lists.html">Use Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes_warnings.html">Use Notes and Warnings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code_blocks.html">Show Example Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables.html">Use Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">Add Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="images.html">Add Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="videos.html">Add Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="inline.html">Use Inline Formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditions.html">Use Conditional Text</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Add a Glossary</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reuse Content</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="theme.html">Use Themes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="styles.html">Customize Styles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build.html">Build the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rtd.html">Use Read the Docs</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Reuse Content</a><ul>
+<li><a class="reference internal" href="#use-a-substitution">Use a Substitution</a></li>
+<li><a class="reference internal" href="#include-a-shared-file">Include a Shared File</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="glossary.html" title="Previous Chapter: Add a Glossary"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Add a Glossary</span>
+    </a>
+  </li>
+  <li>
+    <a href="theme.html" title="Next Chapter: Use Themes"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Use Themes &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="reuse-content">
+<h1>Reuse Content<a class="headerlink" href="#reuse-content" title="Permalink to this headline">¶</a></h1>
+<p>Sphinx supports several ways to reuse content within and across projects.</p>
+<p><a class="reference internal" href="#use-a-substitution">Use a Substitution</a> to reuse short, inline content.</p>
+<p><a class="reference internal" href="#include-a-shared-file">Include a Shared File</a> to reuse longer, more complex content.</p>
+<div class="section" id="use-a-substitution">
+<h2>Use a Substitution<a class="headerlink" href="#use-a-substitution" title="Permalink to this headline">¶</a></h2>
+<p>For common, short content, use RST <a class="reference internal" href="glossary_terms.html#term-substitution"><span class="xref std std-term">substitutions</span></a>.</p>
+<p>For example, use a substitution for a product name. To print the product name in a topic, enter <code class="docutils literal"><span class="pre">|Product|</span></code>. For example:</p>
+<div class="highlight-RST"><div class="highlight"><pre><span></span>Set |Product| configuration properties by . . .
+</pre></div>
+</div>
+<p>The value of <code class="docutils literal"><span class="pre">|Product|</span></code> is defined in a substitution definition:</p>
+<div class="highlight-RST"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">|Product|</span> <span class="ow">replace</span><span class="p">::</span> SoftTech Analyzer
+</pre></div>
+</div>
+<p>The generated documentation from this example is:</p>
+<div class="highlight-RST"><div class="highlight"><pre><span></span>Set SoftTech Analyzer configuration properties by . . .
+</pre></div>
+</div>
+<p>If you then change the replace value of the substitution, the new value is
+used in all instances when you rebuild the project.</p>
+<p>You can define a substitution in any RST file in the project. To keep the
+project organized and have substitutions easily discoverable by other team
+members, you can include all substitutions in a file that is included in every
+other project file.</p>
+<p>For more information, see the <a class="reference external" href="http://www.sphinx-doc.org/en/stable/rest.html#substitutions">Sphinx Substitutions Documentation</a>.</p>
+</div>
+<div class="section" id="include-a-shared-file">
+<h2>Include a Shared File<a class="headerlink" href="#include-a-shared-file" title="Permalink to this headline">¶</a></h2>
+<p>You can store complex content, such as tasks, or code samples, in a file that
+is then included in multiple.</p>
+<p>If you are working on multiple projects, you can save entire topics in shared
+files, and include those files in multiple projects.</p>
+<p>You add a shared file to content in your project with the <code class="docutils literal"><span class="pre">..</span> <span class="pre">include::</span></code> directive. For example:</p>
+<div class="highlight-RST"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">include</span><span class="p">::</span> ../shared/folder/filename.rst
+</pre></div>
+</div>
+<p>The contents of the shared file will then be built in the project.</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">Include paths are relative to the file in the document project, not the file in shared content.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You must reference the shared file from a file within the project. You cannot use a direct TOC reference to files outside of the project directory.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
