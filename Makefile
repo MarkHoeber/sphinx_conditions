@@ -6,6 +6,8 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 PAPER         =
 BUILDDIR      = build/html
+BUILDDIR1      = build/html_cond_1
+BUILDDIR2      = build/html_cond_2
 LINKSDIR       = source/link
 LINKCHECKDIR  = build/linkcheck
 SPHINXAUTOBUILD = sphinx-autobuild
@@ -69,16 +71,16 @@ html:
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)."
 
 .PHONY: html_cond_1
-html:
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)
+html_cond_1:
+	$(SPHINXBUILD) -t Audience1 -b html $(ALLSPHINXOPTS) $(BUILDDIR1)
 	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)."
+	@echo "Build finished. The HTML pages are in $(BUILDDIR1)."
 
 .PHONY: html_cond_2
-html:
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)
+html_cond_2:
+	$(SPHINXBUILD) -t Audience2 -b html $(ALLSPHINXOPTS) $(BUILDDIR2)
 	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)."
+	@echo "Build finished. The HTML pages are in $(BUILDDIR2)."
 
 
 .PHONY: livehtml

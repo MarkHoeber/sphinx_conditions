@@ -94,5 +94,3 @@ rst_epilog = """
 .. include:: substitutions.rst
 """
 
-tags.add('Audience1')
-#tags.add('Audience2')
